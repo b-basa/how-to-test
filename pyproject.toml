@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "how-to-test"
+version = "0.1.0"
+description = "examples with unittest and pytest"
+authors = ["b-basa"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "how_to_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^7.4.2"
+requests = "^2.31.0"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.12.0"
+pylint = "^3.0.1"
+black = "^23.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
